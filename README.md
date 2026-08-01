@@ -12,7 +12,7 @@ algo-trading-101/
 │   └── hardware-in-hft/
 │       └── app/                       Interactive lesson — a Vite + React + TypeScript single-page app
 ├── CURRICULUM.md                      Index of every subject/topic covered, with links
-├── LICENSE                            Apache 2.0
+├── LICENSE                            MIT
 └── README.md                          This file
 ```
 
@@ -42,4 +42,4 @@ Then open the printed local URL. `npm run build` produces a static production bu
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
