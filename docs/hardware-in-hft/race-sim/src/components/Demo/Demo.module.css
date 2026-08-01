@@ -1,0 +1,83 @@
+.section {
+  margin-top: 40px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+}
+
+.title {
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sizeGroup {
+  display: flex;
+  border: 2px solid #000;
+}
+
+.sizeBtn {
+  padding: 8px 16px;
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 500;
+  background: #fff;
+  color: #0a0a0a;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.sizeBtn:hover {
+  background: #f5f5f5;
+}
+
+.sizeBtn.active {
+  background: #000;
+  color: #fff;
+}
+
+.sizeBtn + .sizeBtn {
+  border-left: 2px solid #000;
+}
+
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 28px;
+}
+
+@media (max-width: 900px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}

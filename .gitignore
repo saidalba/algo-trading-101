@@ -1,0 +1,24 @@
+# Logs
+docs/hardware-in-hft/race-sim/logs
+docs/hardware-in-hft/race-sim/*.log
+docs/hardware-in-hft/race-sim/npm-debug.log*
+docs/hardware-in-hft/race-sim/yarn-debug.log*
+docs/hardware-in-hft/race-sim/yarn-error.log*
+docs/hardware-in-hft/race-sim/pnpm-debug.log*
+docs/hardware-in-hft/race-sim/lerna-debug.log*
+
+docs/hardware-in-hft/race-sim/node_modules
+docs/hardware-in-hft/race-sim/dist
+docs/hardware-in-hft/race-sim/dist-ssr
+docs/hardware-in-hft/race-sim/*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

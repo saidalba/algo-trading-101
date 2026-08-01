@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.headline {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.labelF {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: var(--blue);
+}
+
+.labelC {
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  color: var(--red);
+}
+
+.statusText {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: #0a0a0a;
+}
+
+.count {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: #0a0a0a;
+}
+
+.sub {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.pct,
+.wall {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: #0a0a0a;
+}
+
+.stats {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 16px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: #0a0a0a;
+}
+
+.stats .value {
+  text-align: right;
+}
+
+.footnote {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #0a0a0a;
+}
