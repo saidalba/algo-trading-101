@@ -8,16 +8,17 @@ The idea: some concepts in trading infrastructure (latency, hardware tradeoffs, 
 
 ```
 algo-trading-101/
-├── app/            Interactive lessons — a Vite + React + TypeScript single-page app
-├── docs/           Written lessons, organized by subject (see CURRICULUM.md)
-├── CURRICULUM.md   Index of every subject/topic covered, with links
-├── LICENSE         Apache 2.0
-└── README.md       This file
+├── docs/                              Written lessons, organized by subject (see CURRICULUM.md)
+│   └── hardware-in-hft/
+│       └── app/                       Interactive lesson — a Vite + React + TypeScript single-page app
+├── CURRICULUM.md                      Index of every subject/topic covered, with links
+├── LICENSE                            Apache 2.0
+└── README.md                          This file
 ```
 
 See [CURRICULUM.md](CURRICULUM.md) for the full list of subjects and topics.
 
-### `app/`
+### `docs/hardware-in-hft/app/`
 
 The actual guide. A React app where each lesson is a set of composed components — SVG diagrams, live counters, and small simulations — rather than static images. No routing/backend; it's meant to stay simple enough to clone and run.
 
@@ -27,17 +28,17 @@ Current lesson:
   - A live pipeline/matching-engine view comparing how a trade travels through a CPU's shared instruction pipeline vs. an FPGA's dedicated per-stage circuitry, plus a "matching engine race" showing which venue's orders get filled first.
   - An order-placing demo (1,000 / 10,000 / 100,000 orders) that visualizes the throughput gap as a filling grid, with live terminal output streaming simulated fills for each side.
 
-More lessons will be added as additional components/routes inside `app/` over time.
+More lessons will be added as additional components/routes inside `docs/hardware-in-hft/app/` over time.
 
 ## Running locally
 
 ```bash
-cd app
+cd docs/hardware-in-hft/app
 npm install
 npm run dev
 ```
 
-Then open the printed local URL. `npm run build` produces a static production build in `app/dist/`.
+Then open the printed local URL. `npm run build` produces a static production build in `docs/hardware-in-hft/app/dist/`.
 
 ## License
 

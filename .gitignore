@@ -1,16 +1,16 @@
 # Logs
-app/logs
-app/*.log
-app/npm-debug.log*
-app/yarn-debug.log*
-app/yarn-error.log*
-app/pnpm-debug.log*
-app/lerna-debug.log*
+docs/hardware-in-hft/app/logs
+docs/hardware-in-hft/app/*.log
+docs/hardware-in-hft/app/npm-debug.log*
+docs/hardware-in-hft/app/yarn-debug.log*
+docs/hardware-in-hft/app/yarn-error.log*
+docs/hardware-in-hft/app/pnpm-debug.log*
+docs/hardware-in-hft/app/lerna-debug.log*
 
-app/node_modules
-app/dist
-app/dist-ssr
-app/*.local
+docs/hardware-in-hft/app/node_modules
+docs/hardware-in-hft/app/dist
+docs/hardware-in-hft/app/dist-ssr
+docs/hardware-in-hft/app/*.local
 
 # Editor directories and files
 .vscode/*
