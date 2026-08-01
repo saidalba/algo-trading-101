@@ -2,7 +2,8 @@
 
 A beginner-friendly micro guide to algorithmic trading and HFT — taught through small, interactive, in-browser diagrams instead of walls of text.
 
-This guide is still under development! I am planning to cover every subject/topic as I have more time from my priorities.
+> [!NOTE]
+> This guide is still under development! I am planning to cover every subject/topic as I find time alongside my other priorities.
 
 The idea: some concepts in trading infrastructure (latency, hardware tradeoffs, order flow) click a lot faster when you can press play and watch them happen than when you read a paragraph about them. Each lesson in this repo is a self-contained interactive diagram you can run locally and click through.
 
@@ -10,19 +11,23 @@ The idea: some concepts in trading infrastructure (latency, hardware tradeoffs, 
 
 ```
 algo-trading-101/
-├── docs/                              Written lessons, organized by subject (see CURRICULUM.md)
-│   └── hardware-in-hft/
-│       └── race-sim/                  Interactive lesson — a Vite + React + TypeScript single-page app
+├── docs/
+│   ├── hardware-in-hft/
+│   │   └── race-sim/                  Interactive lesson — a Vite + React + TypeScript single-page app
+│   └── machine-learning/              Written lessons, organized by topic (see CURRICULUM.md)
+├── ACKNOWLEDGMENTS.md                 Credits and inspiration
+├── CONTRIBUTING.md                    How to add a lesson or topic
 ├── CURRICULUM.md                      Index of every subject/topic covered, with links
 ├── LICENSE                            MIT
-└── README.md                          This file
+├── README.md                          This file
+└── REFERENCES.md                      Sources and further reading, by topic
 ```
 
 See [CURRICULUM.md](CURRICULUM.md) for the full list of subjects and topics.
 
 ### `docs/hardware-in-hft/race-sim/`
 
-The actual guide. A React app where each lesson is a set of composed components — SVG diagrams, live counters, and small simulations — rather than static images. No routing/backend; it's meant to stay simple enough to clone and run.
+The flagship interactive lesson. A React app where each lesson is a set of composed components — SVG diagrams, live counters, and small simulations — rather than static images. No routing/backend; it's meant to stay simple enough to clone and run.
 
 Current lesson:
 
@@ -31,6 +36,10 @@ Current lesson:
   - An order-placing demo (1,000 / 10,000 / 100,000 orders) that visualizes the throughput gap as a filling grid, with live terminal output streaming simulated fills for each side.
 
 More lessons will be added as additional components/routes inside `docs/hardware-in-hft/race-sim/` over time.
+
+### `docs/machine-learning/`
+
+Written lessons on ML/quant topics for trading. Currently scaffolding — each topic's `README.md` is marked "Coming soon" until it's written.
 
 ## Running locally
 
