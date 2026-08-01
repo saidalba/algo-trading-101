@@ -2,6 +2,11 @@
 
 An index of every subject covered in this repo, grouped by category. Each topic links straight to its folder so you can read a subject without getting sidetracked by the rest.
 
+## Hardware in HFT
+
+- [Hardware in HFT](docs/hardware-in-hft)
+  - [race-sim — CPU versus FPGA](docs/hardware-in-hft/race-sim)
+
 ## Machine Learning
 
 - [Introduction to ML](docs/machine-learning/0-introduction-to-ml)
