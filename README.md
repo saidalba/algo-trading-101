@@ -2,6 +2,8 @@
 
 A beginner-friendly micro guide to algorithmic trading and HFT — taught through small, interactive, in-browser diagrams instead of walls of text.
 
+This guide is still under development! I am planning to cover every subject/topic as I have more time from my priorities.
+
 The idea: some concepts in trading infrastructure (latency, hardware tradeoffs, order flow) click a lot faster when you can press play and watch them happen than when you read a paragraph about them. Each lesson in this repo is a self-contained interactive diagram you can run locally and click through.
 
 ## What's here
