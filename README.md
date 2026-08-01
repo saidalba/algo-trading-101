@@ -8,10 +8,14 @@ The idea: some concepts in trading infrastructure (latency, hardware tradeoffs, 
 
 ```
 algo-trading-101/
-├── app/          Interactive lessons — a Vite + React + TypeScript single-page app
-├── LICENSE       Apache 2.0
-└── README.md     This file
+├── app/            Interactive lessons — a Vite + React + TypeScript single-page app
+├── docs/           Written lessons, organized by subject (see CURRICULUM.md)
+├── CURRICULUM.md   Index of every subject/topic covered, with links
+├── LICENSE         Apache 2.0
+└── README.md       This file
 ```
+
+See [CURRICULUM.md](CURRICULUM.md) for the full list of subjects and topics.
 
 ### `app/`
 
