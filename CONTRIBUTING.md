@@ -9,6 +9,7 @@ Written subjects live under `docs/<category>/<topic>/`, indexed by [CURRICULUM.m
 1. Create the folder: `docs/<category>/<topic>/`
 2. Add a `README.md` inside it with the lesson content.
 3. Link it from `CURRICULUM.md` under the right category (create the category section if it doesn't exist yet).
+4. Add whatever you drew from (papers, books, docs, articles) to [REFERENCES.md](REFERENCES.md) under the same category.
 
 ## Adding an interactive lesson
 
