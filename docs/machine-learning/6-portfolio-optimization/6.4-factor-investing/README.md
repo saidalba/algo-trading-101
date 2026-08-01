@@ -1,0 +1,3 @@
+# Factor Investing
+
+Coming soon.
