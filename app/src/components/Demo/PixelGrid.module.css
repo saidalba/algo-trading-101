@@ -1,0 +1,27 @@
+.gridWrap {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  gap: 2px;
+  background: #f0f0f0;
+  padding: 4px;
+}
+
+.cell {
+  aspect-ratio: 1;
+  background: #e5e7eb;
+}
+
+.cell.f {
+  background: var(--blue);
+}
+
+.cell.c {
+  background: var(--red);
+}
+
+@media (max-width: 900px) {
+  .gridWrap {
+    grid-template-columns: repeat(20, 1fr);
+  }
+}

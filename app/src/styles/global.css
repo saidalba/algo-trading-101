@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #7f1d1d;
+  --red-light: #fdf5f5;
+  --blue: #0c4a6e;
+  --blue-light: #f1f7fb;
+  --blue-mid: #1d4ed8;
+  --blue-soft: #cfe0ff;
+  --blue-strong: #93c5fd;
+  --orange: #c2410c;
+  --orange-light: #ffe4cc;
+  --mono: 'JetBrains Mono', 'Menlo', 'Consolas', monospace;
+  --condensed: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --editor-bg: #1e1e1e;
+  --editor-header: #252526;
+  --editor-text: #d4d4d4;
+  --editor-comment: #6a9955;
+  --editor-keyword: #569cd6;
+  --editor-string: #ce9178;
+  --editor-number: #b5cea8;
+  --editor-type: #4ec9b0;
+  --editor-fn: #dcdcaa;
+  --editor-line: #858585;
+  --editor-blue-btn: #007acc;
+}
+
+body {
+  font-family: var(--sans);
+  background: #fff;
+  color: #0a0a0a;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 40px 80px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    padding: 24px 16px 60px;
+  }
+}

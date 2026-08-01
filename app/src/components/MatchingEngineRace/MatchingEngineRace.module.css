@@ -1,0 +1,25 @@
+.wrap {
+  margin-top: 24px;
+}
+
+.wrap svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flowDot {
+  animation-name: flowPulse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flowPulse {
+  0%,
+  100% {
+    opacity: 0.18;
+  }
+  50% {
+    opacity: 1;
+  }
+}

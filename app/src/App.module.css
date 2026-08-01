@@ -1,0 +1,34 @@
+.titleRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #0a0a0a;
+}
+
+.heading {
+  margin-top: 12px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+}
+
+.fpga {
+  color: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .titleRow {
+    align-items: flex-start;
+  }
+}

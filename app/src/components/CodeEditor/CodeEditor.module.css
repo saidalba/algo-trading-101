@@ -1,0 +1,219 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.editor {
+  border: 2px solid #000;
+  overflow: hidden;
+  background: var(--editor-bg);
+  color: var(--editor-text);
+  font-family: 'Cascadia Code', var(--mono);
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--editor-header);
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.titleLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #27c93f;
+}
+
+.dot.running {
+  background: #d29922;
+  animation: blink 0.6s step-end infinite;
+}
+
+.host {
+  font-size: 12px;
+  color: var(--editor-text);
+}
+
+.run {
+  background: var(--editor-blue-btn);
+  color: white;
+  border: none;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: var(--mono);
+}
+
+.run:disabled {
+  background: #3a3d41;
+  cursor: default;
+}
+
+.tabs {
+  display: flex;
+  background: var(--editor-header);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  padding: 6px 12px;
+  font-size: 10px;
+  color: var(--editor-text);
+  background: var(--editor-bg);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.code {
+  padding: 8px;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.codeLine {
+  display: flex;
+}
+
+.ln {
+  width: 28px;
+  text-align: right;
+  padding-right: 8px;
+  color: var(--editor-line);
+  user-select: none;
+}
+
+.tokPlain {
+  color: var(--editor-text);
+  white-space: pre;
+}
+.tokComment {
+  color: var(--editor-comment);
+  white-space: pre;
+}
+.tokKeyword {
+  color: var(--editor-keyword);
+  white-space: pre;
+}
+.tokString {
+  color: var(--editor-string);
+  white-space: pre;
+}
+.tokNumber {
+  color: var(--editor-number);
+  white-space: pre;
+}
+.tokType {
+  color: var(--editor-type);
+  white-space: pre;
+}
+.tokFn {
+  color: var(--editor-fn);
+  white-space: pre;
+}
+
+.status {
+  display: flex;
+  align-items: flex-end;
+  background: var(--editor-header);
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--editor-line);
+}
+
+.status span {
+  padding: 6px 12px;
+}
+
+.statusActive {
+  color: var(--editor-text) !important;
+  background: var(--editor-bg);
+  position: relative;
+}
+
+.statusActive::before {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 2px;
+  background: var(--editor-blue-btn);
+}
+
+.statusRight {
+  margin-left: auto;
+}
+
+.term {
+  padding: 8px 12px;
+  font-size: 11px;
+  line-height: 1.55;
+  height: 210px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: 'Cascadia Code', var(--mono);
+}
+
+.promptHost {
+  color: #9ecf6a;
+  white-space: pre;
+}
+.promptPath {
+  color: #7aa2f7;
+  white-space: pre;
+}
+.promptPlain {
+  color: var(--editor-text);
+  white-space: pre;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.termLine {
+  white-space: pre;
+}
+.termLine.buy {
+  color: #9ecf6a;
+}
+.termLine.sell {
+  color: #f78166;
+}
+.termLine.meta {
+  color: #858585;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
