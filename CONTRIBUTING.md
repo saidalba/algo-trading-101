@@ -13,7 +13,7 @@ Written subjects live under `docs/<category>/<topic>/`, indexed by [CURRICULUM.m
 
 ## Adding an interactive lesson
 
-Interactive lessons are self-contained apps, like [`docs/hardware-in-hft/app/`](docs/hardware-in-hft/app). Follow the same pattern: a `docs/<category>/` folder with its own app and a `README.md` describing it, linked from `CURRICULUM.md`.
+Interactive lessons are self-contained apps, like [`docs/hardware-in-hft/race-sim/`](docs/hardware-in-hft/race-sim). Follow the same pattern: a `docs/<category>/` folder with its own app and a `README.md` describing it, linked from `CURRICULUM.md`.
 
 ## Commit messages
 

@@ -1,16 +1,16 @@
 # Logs
-docs/hardware-in-hft/app/logs
-docs/hardware-in-hft/app/*.log
-docs/hardware-in-hft/app/npm-debug.log*
-docs/hardware-in-hft/app/yarn-debug.log*
-docs/hardware-in-hft/app/yarn-error.log*
-docs/hardware-in-hft/app/pnpm-debug.log*
-docs/hardware-in-hft/app/lerna-debug.log*
+docs/hardware-in-hft/race-sim/logs
+docs/hardware-in-hft/race-sim/*.log
+docs/hardware-in-hft/race-sim/npm-debug.log*
+docs/hardware-in-hft/race-sim/yarn-debug.log*
+docs/hardware-in-hft/race-sim/yarn-error.log*
+docs/hardware-in-hft/race-sim/pnpm-debug.log*
+docs/hardware-in-hft/race-sim/lerna-debug.log*
 
-docs/hardware-in-hft/app/node_modules
-docs/hardware-in-hft/app/dist
-docs/hardware-in-hft/app/dist-ssr
-docs/hardware-in-hft/app/*.local
+docs/hardware-in-hft/race-sim/node_modules
+docs/hardware-in-hft/race-sim/dist
+docs/hardware-in-hft/race-sim/dist-ssr
+docs/hardware-in-hft/race-sim/*.local
 
 # Editor directories and files
 .vscode/*
