@@ -40,7 +40,7 @@ export function CodeEditor({ venue, host, path, fileName, status, disabled, line
         <span>Ports</span>
         <span className={styles.statusRight}>bash &middot; {host.split('.')[0]}</span>
       </div>
-      <Terminal venue={venue} host={`lse@${host.split('.')[0]}`} path={path} lines={lines} />
+      <Terminal venue={venue} host={`mg@${host.split('.')[0]}`} path={path} lines={lines} />
     </div>
   );
 }

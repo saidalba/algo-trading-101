@@ -76,7 +76,7 @@ function App() {
         <div className={editorsGridStyles.grid}>
           <CodeEditor
             venue="cpu"
-            host="cpu-ny07.lse.internal"
+            host="cpu-ny03.mg.internal"
             path="~/strategies/polymarket"
             fileName="polymarket_arb.cpp"
             status={cpu.status}
@@ -86,7 +86,7 @@ function App() {
           />
           <CodeEditor
             venue="fpga"
-            host="fpga-ny01.lse.internal"
+            host="fpga-ny05.mg.internal"
             path="~/strategies/polymarket"
             fileName="polymarket_arb.cpp"
             status={fpga.status}
