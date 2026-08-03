@@ -8,7 +8,7 @@ import styles from './MatchingEngineRace.module.css';
 // dots ordered far-from-engine -> near-engine so delay index reads as motion toward the engine
 // left group sits next to Firm A (CPU), right group sits next to Firm B (FPGA)
 const leftDots = [286, 307, 328, 349].map((cx, i, arr) => ({ cx, delayIndex: arr.length - 1 - i }));
-const rightDots = [727, 740, 753, 766, 779, 792, 800].map((cx, i) => ({ cx, delayIndex: i }));
+const rightDots = [727, 738, 749, 760, 771, 782, 793].map((cx, i) => ({ cx, delayIndex: i }));
 
 export const MatchingEngineRace = forwardRef<AmbientHandle>(function MatchingEngineRace(_props, ref) {
   const firmARef = useRef<SVGTextElement>(null); // Firm A = CPU
